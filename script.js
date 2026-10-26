@@ -1,7 +1,7 @@
 // ====== SOZLAMALAR ======
 // Telegram username'ingizni shu yerga yozing (@ belgisiz)
 const CONFIG = {
-  telegramUsername: "YOUR_USERNAME",
+  telegramUsername: "Intizor_23_11",
 };
 
 // ====== TARJIMALAR ======
