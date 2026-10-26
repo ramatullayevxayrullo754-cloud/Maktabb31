@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raqamli Maktab</title>
+  <meta name="description" content="Ingliz tili va dasturlash kurslari. Darslar o'zbek, rus va ingliz tillarida. Telegram orqali ro'yxatdan o'ting.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#top" class="logo">Raqamli<span>Maktab</span></a>
+      <nav class="nav-links">
+        <a href="#courses" data-i18n="nav_courses">Kurslar</a>
+        <a href="#how" data-i18n="nav_how">Qanday ishlaydi</a>
+        <a href="#faq" data-i18n="nav_faq">Savollar</a>
+        <a href="#contact" data-i18n="nav_contact">Aloqa</a>
+      </nav>
+      <div class="lang-switch">
+        <button type="button" data-lang="uz" class="active">UZ</button>
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <h1 data-i18n="hero_title">Raqamli kelajakni bugun boshlang</h1>
+        <p class="hero-text" data-i18n="hero_text">Ingliz tili va dasturlash kurslari. Darslar o'zbek, rus va ingliz tillarida. Ro'yxatdan o'tish bir necha daqiqa.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary tg-link" data-i18n="hero_btn">Telegram orqali yozilish</a>
+          <a href="#courses" class="btn btn-outline" data-i18n="hero_btn2">Kurslarni ko'rish</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="courses">
+      <div class="container">
+        <h2 data-i18n="courses_title">Kurslarimiz</h2>
+        <p class="section-text" data-i18n="courses_text">Noldan boshlab yoki bilimingizni oshirish uchun mos kurs tanlang.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🇬🇧</div>
+            <h3 data-i18n="c1_title">Ingliz tili — boshlang'ich (A1–A2)</h3>
+            <p data-i18n="c1_text">Alifbo, asosiy grammatika, kundalik suhbat va so'z boyligi.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🇬🇧</div>
+            <h3 data-i18n="c2_title">Ingliz tili — o'rta daraja (B1–B2)</h3>
+            <p data-i18n="c2_text">Erkin suhbatlashish, yozish, IELTS va xalqaro imtihonlarga tayyorgarlik.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🐍</div>
+            <h3 data-i18n="c3_title">Python dasturlash</h3>
+            <p data-i18n="c3_text">O'zgaruvchilar, sikllar, funksiyalar, ma'lumotlar tahlili va amaliy loyihalar.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3 data-i18n="c4_title">Veb-dasturlash</h3>
+            <p data-i18n="c4_text">HTML, CSS va JavaScript yordamida o'z veb-saytingizni yaratish.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <h2 data-i18n="how_title">Qanday ishlaydi?</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <h3 data-i18n="step1_title">Kursni tanlang</h3>
+            <p data-i18n="step1_text">Sizga mos yo'nalishni saytdan ko'ring.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <h3 data-i18n="step2_title">Telegram'ga yozing</h3>
+            <p data-i18n="step2_text">Tugmani bosing va administrator bilan bog'laning.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <h3 data-i18n="step3_title">Darslarni boshlang</h3>
+            <p data-i18n="step3_text">Guruh va dars jadvali haqida ma'lumot olasiz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <h2 data-i18n="faq_title">Ko'p so'raladigan savollar</h2>
+        <details class="faq-item">
+          <summary data-i18n="q1">Darslar qaysi tillarda o'tiladi?</summary>
+          <p data-i18n="a1">O'zbek, rus va ingliz tillarida. Kurs va guruhga qarab tanlanadi.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="q2">Dasturlash bo'yicha oldindan bilim kerakmi?</summary>
+          <p data-i18n="a2">Yo'q. Kompyuterdan foydalana olish yetarli.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="q3">Narxlar qanday?</summary>
+          <p data-i18n="a3">Narxlar va chegirmalar haqida Telegram orqali ma'lumot olasiz.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta" id="register">
+      <div class="container">
+        <h2 data-i18n="register_title">Hoziroq ro'yxatdan o'ting</h2>
+        <p data-i18n="register_text">Joylar cheklangan. Telegram orqali yozing va o'z kursingizni tanlang.</p>
+        <a href="#" class="btn btn-light tg-link" data-i18n="tg_btn">Telegram'da yozish</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2 data-i18n="contact_title">Aloqa</h2>
+        <p class="section-text" data-i18n="contact_text">Savollaringiz bo'lsa, bizga yozing.</p>
+        <ul class="contact-list">
+          <!-- Quyidagi ma'lumotlarni o'zingizniki bilan almashtiring -->
+          <li><strong>Telegram:</strong> <a href="#" class="tg-link">@YOUR_USERNAME</a></li>
+          <li><strong>Telefon:</strong> <a href="tel:+998000000000">+998 00 000 00 00</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer_text">© 2026 Raqamli Maktab. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
