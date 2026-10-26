@@ -179,6 +179,21 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (e) {}
   setLanguage(savedLang);
 
+  // Tugmalarga bosilganda to'lqin effekti
+  document.querySelectorAll(".btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      ripple.style.width = ripple.style.height = `${size}px`;
+      ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+      ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+      btn.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+    });
+  });
+
   // Scroll bilan paydo bo'ladigan elementlar
   const revealEls = document.querySelectorAll(".card, .step, .faq-item");
   revealEls.forEach((el, i) => {
