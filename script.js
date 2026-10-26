@@ -178,4 +178,28 @@ document.addEventListener("DOMContentLoaded", () => {
     savedLang = localStorage.getItem("siteLang") || "uz";
   } catch (e) {}
   setLanguage(savedLang);
+
+  // Scroll bilan paydo bo'ladigan elementlar
+  const revealEls = document.querySelectorAll(".card, .step, .faq-item");
+  revealEls.forEach((el, i) => {
+    el.classList.add("reveal");
+    el.style.transitionDelay = `${(i % 4) * 0.1}s`;
+  });
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    revealEls.forEach((el) => observer.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("visible"));
+  }
 });
